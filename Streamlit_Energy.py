@@ -86,25 +86,24 @@ selected_score = model_scores.get(model_name)
 st.markdown(f"  {model_name} (R² = {selected_score:.2f})")
 
 st.sidebar.markdown("---")
-st.sidebar.markdown("🛠 Built with Streamlit")
 
 
 # LOAD THE MODELS
 
 @st.cache_resource
 def load_resources():
-    rf = joblib.load("random_forest.pkl")
+    rf = joblib.load("Models/random_forest.pkl")
     
     # Correct XGBoost loading
     xgb_model = xgb.XGBRegressor()
-    xgb_model.load_model("xgb_model.json")  # loads the trained model
+    xgb_model.load_model("Models/xgb_model.json")  # loads the trained model
     
-    gb = joblib.load("gradient_boosting.pkl")
+    gb = joblib.load("Models/gradient_boosting.pkl")
 
     # Load datasets
-    df_rf = pd.read_csv("df_rf.csv")
-    df_xgb = pd.read_csv("df_xgb.csv")
-    df_gb = pd.read_csv("df_gb.csv")
+    df_rf = pd.read_csv("Dataframes/df_rf.csv")
+    df_xgb = pd.read_csv("Dataframes/df_xgb.csv")
+    df_gb = pd.read_csv("Dataframes/df_gb.csv")
 
     return rf, xgb_model, gb, df_rf, df_xgb, df_gb
 
@@ -206,4 +205,5 @@ if st.button("🔮 Predict Energy Usage"):
                 data=prediction_df.set_index("Time"),
                 use_container_width=True
             )
+
 
