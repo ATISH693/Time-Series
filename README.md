@@ -69,7 +69,7 @@ MAE = 0.1643
 
 The Streamlit application provides an interactive platform to forecast energy consumption:
 
-* Users can input **Hour, Weekday, Month**, and select a model.
+* Users can input **Hour, Weekday, Month**, and **select a Model**.
 * Predictions are generated for the next **3 intervals** using recursive forecasting.
 * Outputs include both **numerical predictions** and a **line chart visualization**.
 
