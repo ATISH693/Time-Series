@@ -4,7 +4,9 @@
 ## Project Overview
 
 This project focuses on predicting household energy consumption using the KAGGLE's Household Power Consumption dataset. 
+
 The work involves data cleaning, preprocessing, feature engineering, model training, and evaluation using multiple machine learning techniques. 
+
 A Streamlit application has also been developed to allow interactive forecasting and visualization of results.
 
 ---
@@ -13,6 +15,7 @@ A Streamlit application has also been developed to allow interactive forecasting
 
 * **Source:** Household Power Consumption dataset.
 * **Size:** 1,048,575 rows and features
+
 
 
 ## Preprocessing and Feature Engineering
@@ -24,6 +27,7 @@ A Streamlit application has also been developed to allow interactive forecasting
 5. **Scaling:** Applied `StandardScaler` for KNN, while tree-based models did not require scaling.
 
 
+---
 
 ## Models Used:
 
