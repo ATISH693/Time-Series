@@ -12,7 +12,8 @@ A Streamlit application has also been developed to allow interactive forecasting
 ## Dataset
 
 * **Source:** Household Power Consumption dataset.
-* **Size:** \1,048,575 rows.
+* **Size:** 1,048,575 rows and features
+
 
 ## Preprocessing and Feature Engineering
 
@@ -23,6 +24,7 @@ A Streamlit application has also been developed to allow interactive forecasting
 5. **Scaling:** Applied `StandardScaler` for KNN, while tree-based models did not require scaling.
 
 
+
 ## Models Used:
 
 * **K-Nearest Neighbors (KNN)**
@@ -31,6 +33,7 @@ A Streamlit application has also been developed to allow interactive forecasting
 * **XGBoost Regressor**
 
 ---
+
 
 ## Evaluation and Metrics
 
@@ -54,7 +57,7 @@ R² = 0.6387
 RMSE = 0.2820
 MAE = 0.1643
 
-XGBoost demonstrated the best performance with the lowest RMSE and the highest R².
+**XGBoost demonstrated the best performance with the lowest RMSE and the highest R².**
 
 ---
 
@@ -71,7 +74,7 @@ The Streamlit application provides an interactive platform to forecast energy co
 ## Live Demo
 
 The deployed application can be accessed here:
-👉 **[Streamlit App Link](https://time-series-phcfztzgaaaeappyquxaf6t.streamlit.app/)**
+ **[Streamlit App Link](https://time-series-phcfztzgaaaeappyquxaf6t.streamlit.app/)**
 
 ---
 
