@@ -13,7 +13,7 @@ A Streamlit application has also been developed to allow interactive forecasting
 
 ## Dataset
 
-* **Source:** Household Power Consumption dataset.
+* **Source:** Household Power Consumption Kaggle dataset.
 * **Size:** 1,048,575 rows and features
 
 
