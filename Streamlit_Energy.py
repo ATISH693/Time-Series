@@ -94,8 +94,8 @@ def load_resources():
     rf = joblib.load("Models/random_forest.pkl")
     
     # Correct XGBoost loading
-    xgb_model = xgb.XGBRegressor()
-    xgb_model.load_model("Models/xgb_model.json")  # loads the trained model
+    
+    xgb_model = joblib.load("Models/xgb_model.pkl")
     
     gb = joblib.load("Models/gradient_boosting.pkl")
 
@@ -204,6 +204,7 @@ if st.button("🔮 Predict Energy Usage"):
                 data=prediction_df.set_index("Time"),
                 use_container_width=True
             )
+
 
 
 
